@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/inputSMS"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="100dp"
+            android:ems="10"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/shortURLbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:text="URL : 축약형"/>
+            <TextView
+                android:id="@+id/shortURLres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:hint="패턴 검사 결과"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/longURLbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:text="URL : 장문"/>
+            <TextView
+                android:id="@+id/longURLres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:hint="패턴 검사 결과"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/typoURLbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:text="URL : 눈속임"/>
+            <TextView
+                android:id="@+id/typoURLres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:hint="패턴 검사 결과"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/randomURLbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:text="URL : 무작위"/>
+            <TextView
+                android:id="@+id/randomURLres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:hint="패턴 검사 결과"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/korURLbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:text="URL : 한국어"/>
+            <TextView
+                android:id="@+id/korURLres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:hint="패턴 검사 결과"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="15dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/specificKeywordbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:text="특정 키워드"/>
+            <TextView
+                android:id="@+id/specificKeywordres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:hint="패턴 검사 결과"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/specialCharacterbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:text="특수 문자"/>
+            <TextView
+                android:id="@+id/specialCharacterres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:hint="패턴 검사 결과"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/senderNumberbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:text="발신자 번호"/>
+            <TextView
+                android:id="@+id/senderNumberres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:hint="패턴 검사 결과"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/fuckingFontbtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:textSize="15dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:text="버디체 검사"/>
+            <TextView
+                android:id="@+id/fuckingFontres"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="20dp"
+                android:textSize="20dp"
+                android:textAlignment="textStart"
+                android:maxLines="1"
+                android:hint="패턴 검사 결과"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
